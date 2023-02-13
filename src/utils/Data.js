@@ -19,6 +19,24 @@ export const Data = {
     'Speaking and Presenting',
     'Stakeholder Management'
   ],
+  sliderPoints: [
+    ['Follow', 'Apply', 'Contribute', 'Define', 'Inspire'],
+    ['Peers', 'CoP', 'Multidiscipliary', 'Business', 'Exec'],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    [1,2,3,4,5],
+    
+  ],
   datasets: [{
     label: 'Senior',
     data: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 3, 2],
@@ -56,12 +74,12 @@ export const Data = {
     label: 'You',
     data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     fill: true,
-    backgroundColor: 'rgba(241, 90, 34, 0.2)',
-    borderColor: 'rgb(241, 90, 34)',
+    backgroundColor: 'rgba(34, 139, 34, 0.2)',
+    borderColor: 'rgb(34, 139, 34)',
     borderWidth: 1,
-    pointBackgroundColor: 'rgb(241, 90, 34)',
+    pointBackgroundColor: 'rgb(34, 139, 34)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(241, 90, 34)'
+    pointHoverBorderColor: 'rgb(34, 139, 34)'
   }]
 }
