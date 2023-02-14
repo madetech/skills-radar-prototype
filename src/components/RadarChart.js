@@ -64,12 +64,11 @@ function RadarChart({ data }) {
               { value: 5, text: data.sliderPoints[index][4] }
             ],
             onChange: val => {
-              console.log(val.value, ref);
               ref.current.data.datasets[3].data[index] = val.value;
               ref.current.update()
             }
           }
-          return <Likert {...sliderTemplate}/>
+          return <Likert key={skill}{...sliderTemplate}/>
         })
       }
     </div>
