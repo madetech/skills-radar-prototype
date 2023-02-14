@@ -74,7 +74,7 @@ export const Data = {
     label: 'You',
     data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     fill: true,
-    backgroundColor: 'rgba(34, 139, 34, 0.2)',
+    backgroundColor: 'rgba(34, 139, 34, 0.5)',
     borderColor: 'rgb(34, 139, 34)',
     borderWidth: 1,
     pointBackgroundColor: 'rgb(34, 139, 34)',
