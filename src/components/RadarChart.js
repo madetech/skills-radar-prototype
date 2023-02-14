@@ -24,7 +24,8 @@ function RadarChart({ data }) {
             },
             legend: {
               display: true,
-              align: "center"
+              align: "center",
+              position: "bottom"
             },
             
           },
