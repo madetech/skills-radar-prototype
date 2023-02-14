@@ -6,41 +6,9 @@ import {Chart, DatasetController, Filler} from 'chart.js'
 Chart.register(Filler)
 
 function RadarChart({ data }) {
-
-  const Leadership = {
-    question: "Leadersip & Strategy",
-    responses: [
-      { value: 1, text: "Follow" },
-      { value: 2, text: "Apply" },
-      { value: 3, text: "Contribute" },
-      { value: 4, text: "Define" },
-      { value: 5, text: "Inspire" }
-    ],
-    onChange: val => {
-      console.log(val.value);
-      ref.current.data.datasets[0].data[0] = val.value;
-      ref.current.update()
-    }
-  };
-
-  const Technical = {
-    question: "Technical Communication",
-    responses: [
-      { value: 1, text: "Peers" },
-      { value: 2, text: "CoP" },
-      { value: 3, text: "multidisciplinary" },
-      { value: 4, text: "Business" },
-      { value: 5, text: "Exec" }
-    ],
-    onChange: val => {
-      console.log(val.value);
-      ref.current.data.datasets[0].data[2] = val.value;
-      ref.current.update()
-    }
-  };
-
+  
   const ref = React.createRef();
-
+  
   return (
     <div className="chart-container">
       <h2 style={{ textAlign: "center" }}>Radar Chart</h2>
@@ -84,8 +52,25 @@ function RadarChart({ data }) {
           }
         }}
       />
-      <Likert {...Leadership} />
-      <Likert {...Technical} />
+      {
+        data.labels.map((skill, index) => {
+          const sliderTemplate = {
+            question: skill,
+            responses: [
+              { value: 1, text: data.sliderPoints[index][0] },
+              { value: 2, text: data.sliderPoints[index][1] },
+              { value: 3, text: data.sliderPoints[index][2] },
+              { value: 4, text: data.sliderPoints[index][3] },
+              { value: 5, text: data.sliderPoints[index][4] }
+            ],
+            onChange: val => {
+              ref.current.data.datasets[3].data[index] = val.value;
+              ref.current.update()
+            }
+          }
+          return <Likert key={skill} {...sliderTemplate}/>
+        })
+      }
     </div>
   );
 }

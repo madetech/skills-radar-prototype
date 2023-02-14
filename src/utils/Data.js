@@ -19,6 +19,24 @@ export const Data = {
     'Speaking and Presenting',
     'Stakeholder Management'
   ],
+  sliderPoints: [
+    ['Follow', 'Apply', 'Contribute', 'Define', 'Inspire'],
+    ['Peers', 'CoP', 'Multidiscipliary', 'Business', 'Exec'],
+    ['Adopts', 'Specialises', 'Evangelises', 'Masters', 'Creates'],
+    ['Adopts', 'Specialises', 'Evangelises', 'Masters', 'Creates'],
+    ['Adopts', 'Specialises', 'Evangelises', 'Masters', 'Creates'],
+    ['Apply Within a Service', 'Apply Within a Business Domain', 'Apply External', 'Define Strategy', 'Transform an Enterprise'],
+    ['Follow', 'Apply', 'Evangelises', 'Masters', 'Creates'],
+    ['Assist Workshops', 'Leads Workshops', 'Creates New Workshops', 'Drives Team Ways of Working', 'Impacts Business Ways of Working'],
+    ['Follow', 'Apply', 'Evangelises', 'Masters', 'Creates'],
+    ['Self Improver', 'Growth Mindset', 'Teaches Others', 'Mentors Others', 'Impacts Large Groups'],
+    ['Tries Once', 'Intermitent Attempts or Unclear Goals', 'Adopts Multiple Strategies with Clear Goals', 'Adopts Resourceful Strategies with Clear Goals', 'Succeeds Despite the Odds'],
+    ['Understands Context and User Needs', 'Engages with Business and User Research', 'Translates Business Context and Use Need to Developers', 'Influences a Service Area', 'Impacts Business Practices and End Users'],
+    ['Individuals', 'Team', 'Multiple Teams', 'Company', 'Community'],
+    ['Assists', 'Leads', 'Creates', 'Influences', 'Impacts'],
+    ['Awareness', 'Engages', 'Recognised', 'Trusted', 'Partner'],
+    
+  ],
   datasets: [{
     label: 'Senior',
     data: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 3, 2],
@@ -56,12 +74,12 @@ export const Data = {
     label: 'You',
     data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     fill: true,
-    backgroundColor: 'rgba(241, 90, 34, 0.2)',
-    borderColor: 'rgb(241, 90, 34)',
+    backgroundColor: 'rgba(34, 139, 34, 0.5)',
+    borderColor: 'rgb(34, 139, 34)',
     borderWidth: 1,
-    pointBackgroundColor: 'rgb(241, 90, 34)',
+    pointBackgroundColor: 'rgb(34, 139, 34)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(241, 90, 34)'
+    pointHoverBorderColor: 'rgb(34, 139, 34)'
   }]
 }

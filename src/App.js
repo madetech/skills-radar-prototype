@@ -21,7 +21,6 @@ Chart.register(
 );
 
 function App() {
-  console.log('dat', Data);
   return (
     <div className="App">
       <RadarChart data={Data}/>
