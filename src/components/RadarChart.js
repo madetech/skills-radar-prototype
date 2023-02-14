@@ -68,7 +68,7 @@ function RadarChart({ data }) {
               ref.current.update()
             }
           }
-          return <Likert key={skill}{...sliderTemplate}/>
+          return <Likert key={skill} {...sliderTemplate}/>
         })
       }
     </div>
