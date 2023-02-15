@@ -35,18 +35,22 @@ function RadarChart({ data }) {
               min: 0,
               ticks: {
                 stepSize: 1,
-                // backdropColor: "orange",
-                color: "black"
+                color: "black",
+                font: {
+                  size: 15
+                }
               },
               grid: {
                 color: "gray"
               },
               angleLines: {
+                  lineWidth: 3,
                   color: "gray"
               },
               pointLabels: {
+                padding: 2,
                 font: {
-                  size: 20
+                  size: 12
                 }
               }
             }
