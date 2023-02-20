@@ -4,7 +4,7 @@ Chart.register(Filler)
 export const Data = {
   labels: [
     'Leadership & Strategy',
-    'Technical Communication',
+    'Communication',
     'Software Development',
     'Cloud',
     'Security',
@@ -13,11 +13,11 @@ export const Data = {
     'Facilitation',
     'Agile Practices',
     'Growth Mindset',
-    'Resilience & Persistence',
-    'User and Business Awareness',
+    'Resilience',
+    'Business',
     'Influencing',
-    'Speaking and Presenting',
-    'Stakeholder Management'
+    'Presenting',
+    'Stakeholders'
   ],
   sliderPoints: [
     ['Follow', 'Apply', 'Contribute', 'Define', 'Inspire'],

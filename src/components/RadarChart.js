@@ -16,18 +16,8 @@ function RadarChart({ data }) {
         ref={ref}
         data={data}
         options={{
-          plugins: {
-            title: {
-              display: true,
-              align: "start",
-              text: "Users Gained between 2016-2020"
-            },
-            legend: {
-              display: true,
-              align: "center",
-              position: "bottom"
-            },
-            
+          layout: {
+            padding: 0
           },
           scales: {
             r: {
@@ -50,8 +40,31 @@ function RadarChart({ data }) {
                 }
               }
             }
+          },
+          responsive: true,
+          legend: {
+              display: false
+          },
+          tooltips: {
+              mode: 'single',
+              backgroundColor: '#fff',
+              bodyColor: '#888',
+              titleColor: '#888'
+          },
+          scale: {
+              ticks: {
+                  beginAtZero: true,
+                  display: false
+              },
+          },
+          maintainAspectRatio: true,
+          elements: {
+              line: {
+                   tension: 0,
+              }
           }
-        }}
+        }
+      }
       />
       {
         data.labels.map((skill, index) => {
@@ -67,7 +80,8 @@ function RadarChart({ data }) {
             onChange: val => {
               ref.current.data.datasets[3].data[index] = val.value;
               ref.current.update()
-            }
+            },
+            layout: 'stacked' 
           }
           return <Likert key={skill} {...sliderTemplate}/>
         })
