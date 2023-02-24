@@ -31,7 +31,7 @@ export const Data = {
     ['Follow', 'Apply', 'Evangelises', 'Masters', 'Creates'],
     ['Self Improver', 'Growth Mindset', 'Teaches Others', 'Mentors Others', 'Impacts Large Groups'],
     ['delivers expected outcomes', 'delivers challenging outcomes', 'delivers challenging outcomes at pace', 'adapts and learns from challenges', 'succeeds despite the odds'],
-    ['Understands Context and User Needs', 'Engages with Business and User Research', 'Translates Business Context and Use Need to Developers', 'Influences a Service Area', 'Impacts Business Practices and End Users'],
+    ['Understands Context and User Needs', 'Engages with Business and User Research', 'Translates Business Context and Useir Need to Developers', 'Influences a Service Area', 'Impacts Business Practices and End Users'],
     ['Individuals', 'Team', 'Multiple Teams', 'Company', 'Community'],
     ['Assists', 'Leads', 'Creates', 'Influences', 'Impacts'],
     ['Awareness', 'Engages', 'Recognised', 'Trusted', 'Partner'],
