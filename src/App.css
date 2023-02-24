@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-width: 2500px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -26,6 +28,45 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.chart-container {
+  display: flex;
+}
+
+.chart-container > div {
+  display: block;
+  width: 50%;
+}
+
+.radar-chart {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+
+.chart-container .sliders {
+  width: 50%;
+}
+
+
+.likertScale.layout--stacked {
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.likertLegend {
+  font-weight: bold;
+}
+
+.likertResponse {
+  cursor: pointer;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes App-logo-spin {
