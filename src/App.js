@@ -1,9 +1,22 @@
 import RadarChart from "./components/RadarChart";
-import { Data } from "./utils/Data";
-import { useState, useEffect } from "react";
-import Likert from 'react-likert-scale';
-import './App.css';
-import {Chart, ArcElement, BarElement, BarController, CategoryScale, LinearScale, PointElement, LineController, RadialLinearScale, LineElement, RadarController, Tooltip, Filler, Legend} from 'chart.js'
+import { RadarProvider } from "./components/RadarProvider.js";
+import "./App.css";
+import {
+  Chart,
+  ArcElement,
+  BarElement,
+  BarController,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineController,
+  RadialLinearScale,
+  LineElement,
+  RadarController,
+  Tooltip,
+  Filler,
+  Legend,
+} from "chart.js";
 Chart.register(
   ArcElement,
   BarElement,
@@ -22,9 +35,13 @@ Chart.register(
 
 function App() {
   return (
-    <div className="App">
-      <RadarChart data={Data}/>
-    </div>
+    <RadarProvider>
+      <h2 style={{ textAlign: "center" }}>Radar Chart</h2>
+
+      <div className="App">
+        <RadarChart />
+      </div>
+    </RadarProvider>
   );
 }
 
