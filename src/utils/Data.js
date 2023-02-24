@@ -30,7 +30,7 @@ export const Data = {
     ['Assist Workshops', 'Leads Workshops', 'Creates New Workshops', 'Drives Team Ways of Working', 'Impacts Business Ways of Working'],
     ['Follow', 'Apply', 'Evangelises', 'Masters', 'Creates'],
     ['Self Improver', 'Growth Mindset', 'Teaches Others', 'Mentors Others', 'Impacts Large Groups'],
-    ['Tries Once', 'Intermitent Attempts or Unclear Goals', 'Adopts Multiple Strategies with Clear Goals', 'Adopts Resourceful Strategies with Clear Goals', 'Succeeds Despite the Odds'],
+    ['delivers expected outcomes', 'delivers challenging outcomes', 'delivers challenging outcomes at pace', 'adapts and learns from challenges', 'succeeds despite the odds'],
     ['Understands Context and User Needs', 'Engages with Business and User Research', 'Translates Business Context and Use Need to Developers', 'Influences a Service Area', 'Impacts Business Practices and End Users'],
     ['Individuals', 'Team', 'Multiple Teams', 'Company', 'Community'],
     ['Assists', 'Leads', 'Creates', 'Influences', 'Impacts'],
@@ -39,7 +39,7 @@ export const Data = {
   ],
   datasets: [{
     label: 'Senior',
-    data: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2],
+    data: [3, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2],
     fill: true,
     hidden: true,
     backgroundColor: 'rgba(255, 99, 132, 0.2)',
@@ -51,7 +51,7 @@ export const Data = {
     pointHoverBorderColor: 'rgb(255, 99, 132)'
   }, {
     label: 'Lead',
-    data: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 3, 3, 3],
+    data: [3, 4, 4, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3],
     fill: true,
     hidden: true,
     backgroundColor: 'rgba(54, 162, 235, 0.2)',
@@ -63,7 +63,7 @@ export const Data = {
     pointHoverBorderColor: 'rgb(54, 162, 235)'
   }, {
     label: 'Principal',
-    data: [4, 4, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+    data: [4, 4, 3, 3, 3, 4, 4, 4, 4, 3, 4, 4, 4, 4, 4],
     fill: true,
     hidden: true,
     backgroundColor: 'rgba(241, 90, 34, 0.2)',
