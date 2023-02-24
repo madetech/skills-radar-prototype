@@ -39,7 +39,7 @@ export const Data = {
   ],
   datasets: [{
     label: 'Senior',
-    data: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 3, 2],
+    data: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2],
     fill: true,
     hidden: true,
     backgroundColor: 'rgba(255, 99, 132, 0.2)',
@@ -51,7 +51,7 @@ export const Data = {
     pointHoverBorderColor: 'rgb(255, 99, 132)'
   }, {
     label: 'Lead',
-    data: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 3, 4, 3],
+    data: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 3, 3, 3],
     fill: true,
     hidden: true,
     backgroundColor: 'rgba(54, 162, 235, 0.2)',
@@ -63,7 +63,7 @@ export const Data = {
     pointHoverBorderColor: 'rgb(54, 162, 235)'
   }, {
     label: 'Principal',
-    data: [4, 4, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 4, 5, 4],
+    data: [4, 4, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
     fill: true,
     hidden: true,
     backgroundColor: 'rgba(241, 90, 34, 0.2)',
