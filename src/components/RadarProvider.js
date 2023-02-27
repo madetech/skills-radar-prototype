@@ -6,7 +6,6 @@ const RadarContext = React.createContext();
 function radarReducer(state, action) {
   switch (action.type) {
     case "update": {
-      console.log(`What's the state:`, state.data);
       return { data: state.data };
     }
     default: {
