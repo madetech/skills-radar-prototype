@@ -10,7 +10,7 @@ export const Data = {
     "Facilitation",
     "Agile Practices",
     "Growth Mindset",
-    "Resilience",
+    "Resilience & Drive to Deliver",
     "Business",
     "Influencing",
     "Presenting",
