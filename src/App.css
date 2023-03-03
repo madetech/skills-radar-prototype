@@ -49,12 +49,9 @@
   width: 50%;
 }
 
-
 .likertScale.layout--stacked {
-  align-items: center;
   margin-bottom: 30px;
 }
-
 
 .likertLegend {
   font-weight: bold;

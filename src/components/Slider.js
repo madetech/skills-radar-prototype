@@ -13,6 +13,7 @@ function Slider({ skill, index, descriptors }) {
       { value: 5, text: descriptors[4] },
     ],
     layout: "stacked",
+    style: { alignItems: "center" },
   };
   return (
     <RadarConsumer>
