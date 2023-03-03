@@ -1,7 +1,7 @@
 export const Data = {
   labels: [
     "Leadership & Strategy",
-    "Communication",
+    "Technical Communication",
     "Software Development",
     "Cloud",
     "Security",
@@ -18,7 +18,7 @@ export const Data = {
   ],
   sliderPoints: [
     ["Follow", "Apply", "Contribute", "Define", "Inspire"],
-    ["Peers", "CoP", "Multidiscipliary", "Business", "Exec"],
+    ["Peers", "Tech teams", "Multidisciplinary", "Business", "Exec"],
     ["Adopts", "Specialises", "Evangelises", "Masters", "Creates"],
     ["Adopts", "Specialises", "Evangelises", "Masters", "Creates"],
     ["Adopts", "Specialises", "Evangelises", "Masters", "Creates"],
