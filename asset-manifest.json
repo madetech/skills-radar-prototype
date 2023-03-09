@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/skills-radar-prototype/static/css/main.2e7a9bb0.css",
-    "main.js": "/skills-radar-prototype/static/js/main.97e70d47.js",
+    "main.js": "/skills-radar-prototype/static/js/main.6672c759.js",
     "static/js/787.a03e7d00.chunk.js": "/skills-radar-prototype/static/js/787.a03e7d00.chunk.js",
     "index.html": "/skills-radar-prototype/index.html",
     "main.2e7a9bb0.css.map": "/skills-radar-prototype/static/css/main.2e7a9bb0.css.map",
-    "main.97e70d47.js.map": "/skills-radar-prototype/static/js/main.97e70d47.js.map",
+    "main.6672c759.js.map": "/skills-radar-prototype/static/js/main.6672c759.js.map",
     "787.a03e7d00.chunk.js.map": "/skills-radar-prototype/static/js/787.a03e7d00.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2e7a9bb0.css",
-    "static/js/main.97e70d47.js"
+    "static/js/main.6672c759.js"
   ]
 }
