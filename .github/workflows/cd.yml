@@ -2,18 +2,21 @@ on:
   push:
     branches:
     - main
+    
+jobs:
+  deploy_github_pages:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '19.x'
 
-  steps:
-  - name: Check out repository
-    uses: actions/checkout@v3
-  - uses: actions/setup-node@v1
-    with:
-      node-version: '19.x'
+    - name: Install dependencies and build the site
+      run: |
+        npm install
+        npm run build
 
-  - name: Install dependencies and build the site
-    run: |
-      npm install
-      npm run build
-
-  - name: Deploy to GitHub Pages
-    run: npm run deploy
+    - name: Deploy to GitHub Pages
+      run: npm run deploy
