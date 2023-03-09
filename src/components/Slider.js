@@ -1,5 +1,6 @@
 import Likert from "react-likert-scale";
 
+import HoverLikertSlider from "./HoverLikertSlider";
 import { RadarConsumer } from "./RadarProvider";
 
 function Slider({ skill, index, descriptors }) {
@@ -18,14 +19,20 @@ function Slider({ skill, index, descriptors }) {
   return (
     <RadarConsumer>
       {({ state, dispatch }) => (
-        <Likert
-          key={skill}
-          onChange={(val) => {
-            state.data.datasets[3].data[index] = val.value;
-            dispatch({ type: "update", data: state.data });
-          }}
-          {...sliderTemplate}
-        />
+        <HoverLikertSlider
+          skill={skill}
+          descriptors={descriptors}
+          sliderDetails={state.data.sliderDetails[skill]}
+        >
+          <Likert
+            key={skill}
+            onChange={(val) => {
+              state.data.datasets[3].data[index] = val.value;
+              dispatch({ type: "update", data: state.data });
+            }}
+            {...sliderTemplate}
+          />
+        </HoverLikertSlider>
       )}
     </RadarConsumer>
   );

@@ -16,6 +16,15 @@ export const Data = {
     "Presenting",
     "Stakeholders",
   ],
+  sliderDetails: {
+    "Leadership & Strategy": {
+      follow: "Follow the crowd",
+      apply: "Applies what you've learned",
+      contribute: "Contributes as an active participant",
+      define: "Works with stakeholders to define and set strategic direction",
+      inspire: "Inspires others to do all the things",
+    },
+  },
   sliderPoints: [
     ["Follow", "Apply", "Contribute", "Define", "Inspire"],
     ["Peers", "Tech teams", "Multidisciplinary", "Business", "Exec"],
