@@ -1,81 +1,19 @@
-export const Data = {
-  labels: [
-    "Leadership & Strategy",
-    "Technical Communication",
-    "Software Development",
-    "Cloud",
-    "Security",
-    "Integrations",
-    "Methodology",
-    "Facilitation",
-    "Agile Practices",
-    "Growth Mindset",
-    "Resilience & Drive to Deliver",
-    "Business",
-    "Influencing",
-    "Presenting",
-    "Stakeholders",
-  ],
-  sliderDetails: {
-    "Leadership & Strategy": {
-      follow: "Follow the crowd",
-      apply: "Applies what you've learned",
-      contribute: "Contributes as an active participant",
-      define: "Works with stakeholders to define and set strategic direction",
-      inspire: "Inspires others to do all the things",
-    },
-  },
-  sliderPoints: [
-    ["Follow", "Apply", "Contribute", "Define", "Inspire"],
-    ["Peers", "Tech teams", "Multidisciplinary", "Business", "Exec"],
-    ["Adopts", "Specialises", "Evangelises", "Masters", "Creates"],
-    ["Adopts", "Specialises", "Evangelises", "Masters", "Creates"],
-    ["Adopts", "Specialises", "Evangelises", "Masters", "Creates"],
-    [
-      "Apply Within a Service",
-      "Apply Within a Business Domain",
-      "Apply External",
-      "Define Strategy",
-      "Transform an Enterprise",
-    ],
-    ["Follow", "Apply", "Evangelises", "Masters", "Creates"],
-    [
-      "Assist Workshops",
-      "Leads Workshops",
-      "Creates New Workshops",
-      "Drives Team Ways of Working",
-      "Impacts Business Ways of Working",
-    ],
-    ["Follow", "Apply", "Evangelises", "Masters", "Creates"],
-    [
-      "Self Improver",
-      "Growth Mindset",
-      "Teaches Others",
-      "Mentors Others",
-      "Impacts Large Groups",
-    ],
-    [
-      "delivers expected outcomes",
-      "delivers challenging outcomes",
-      "delivers challenging outcomes at pace",
-      "adapts and learns from challenges",
-      "succeeds despite the odds",
-    ],
-    [
-      "Understands Context and User Needs",
-      "Engages with Business and User Research",
-      "Translates Business Context and User Need to Developers",
-      "Influences a Service Area",
-      "Impacts Business Practices and End Users",
-    ],
-    ["Individuals", "Team", "Multiple Teams", "Company", "Community"],
-    ["Assists", "Leads", "Creates", "Influences", "Impacts"],
-    ["Awareness", "Engages", "Recognised", "Trusted", "Partner"],
-  ],
+import {
+  TechArchAttributes as RoleData,
+  TechArchRoles as RoleLevels,
+} from "./data/TechArchAttributes";
+
+// Magic number: 3 = index in the dataset. Used elsewhere.
+export const YOU = 3;
+
+export const ChartData = {
+  // Labels is used for the graph so generate it from the JSON
+  labels: (() => Object.keys(RoleData))(),
+  sliderDetails: RoleData,
   datasets: [
     {
       label: "Senior",
-      data: [3, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2],
+      data: RoleLevels.Senior,
       fill: true,
       hidden: true,
       backgroundColor: "rgba(255, 99, 132, 0.2)",
@@ -88,7 +26,7 @@ export const Data = {
     },
     {
       label: "Lead",
-      data: [3, 4, 4, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3],
+      data: RoleLevels.Lead,
       fill: true,
       hidden: true,
       backgroundColor: "rgba(54, 162, 235, 0.2)",
@@ -101,7 +39,7 @@ export const Data = {
     },
     {
       label: "Principal",
-      data: [4, 4, 3, 3, 3, 4, 4, 4, 4, 3, 4, 4, 4, 4, 4],
+      data: RoleLevels.Principal,
       fill: true,
       hidden: true,
       backgroundColor: "rgba(241, 90, 34, 0.2)",
@@ -114,6 +52,7 @@ export const Data = {
     },
     {
       label: "You",
+      // These values change when you use the tool.
       data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       fill: true,
       backgroundColor: "rgba(0, 172, 50, 0.5)",

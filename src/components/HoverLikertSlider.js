@@ -32,7 +32,7 @@ class HoverLikertSlider extends React.Component {
 
     // Don't want to use `#find` we want to know if there's any other matched
     // descriptors. If there any other descriptors it will show the wrong tooltip.
-    this.props.descriptors.forEach((descriptor) => {
+    Object.keys(this.props.descriptors).forEach((descriptor) => {
       if (textToUse.indexOf(descriptor) !== -1) {
         tooltip = descriptor;
         count++;
@@ -42,14 +42,15 @@ class HoverLikertSlider extends React.Component {
       this.setState({ sliderDetail: null });
     });
 
-    if (!tooltip || count > 1) return null;
+    if (!tooltip || count > 1) {
+      this.setState({ sliderDetail: null });
+      return null;
+    }
 
-    return tooltip.toLowerCase();
+    return tooltip;
   }
 
   handleOver = (evt) => {
-    if (!this.props.sliderDetails) return;
-
     const target = evt.target;
 
     if (this.checkMouseIsOverClickableElement(target)) {
@@ -59,7 +60,7 @@ class HoverLikertSlider extends React.Component {
 
     const textToUse = this.retrieveCorrectTextToCheckAgainst(evt.target);
     const key = this.getKeyForSliderDetail(textToUse);
-    const sliderDetail = this.props.sliderDetails[key];
+    const sliderDetail = this.props.descriptors[key];
 
     this.setState({ sliderDetail });
   };
