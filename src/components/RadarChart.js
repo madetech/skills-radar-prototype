@@ -15,16 +15,18 @@ function RadarChart() {
             </div>
           </div>
           <div className="sliders">
-            {state.data.labels.map((skill, index) => {
-              return (
-                <Slider
-                  key={`slider-${index}`}
-                  skill={skill}
-                  index={index}
-                  descriptors={state.data.sliderPoints[index]}
-                />
-              );
-            })}
+            {Object.entries(state.data.sliderDetails).map(
+              ([skill, descriptors], index) => {
+                return (
+                  <Slider
+                    key={`slider-${index}`}
+                    skill={skill}
+                    index={index}
+                    descriptors={descriptors}
+                  />
+                );
+              }
+            )}
           </div>
         </div>
       )}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Data } from "../utils/Data";
+import { ChartData } from "../utils/Data";
 
 const RadarContext = React.createContext();
 
@@ -15,7 +15,7 @@ function radarReducer(state, action) {
 }
 
 function RadarProvider({ children }) {
-  const [state, dispatch] = React.useReducer(radarReducer, { data: Data });
+  const [state, dispatch] = React.useReducer(radarReducer, { data: ChartData });
   const value = { state, dispatch };
   return (
     <RadarContext.Provider value={value}>{children}</RadarContext.Provider>
